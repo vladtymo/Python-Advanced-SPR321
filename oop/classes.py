@@ -44,6 +44,11 @@ class Order:
         if value >= 0:
             self.__price = value
 
+    # ------ static method ------
+    @staticmethod
+    def showInfo():
+        print("This is Order class")
+
     # ------ magic method ------
     def __str__(self):
         return f"#{self.number}: {self.name} - {self.__price}$"
@@ -51,6 +56,8 @@ class Order:
     def __int__(self):
         return self.number
 
+
+Order.showInfo()
 
 order1 = Order("iPhone 13 Pro", 690, 5)
 order1.show()
