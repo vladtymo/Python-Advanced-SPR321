@@ -11,7 +11,7 @@ if "purple" not in colors:
 
 # ---- shallow copy
 shallowList = colors
-colors[1] = "superpuperwhite"
+colors[1] = "super-dark"
 
 # ---- deep copy
 deepList = colors.copy()
@@ -22,21 +22,19 @@ print(f"Shallow: {shallowList}")
 print(f"Deep: {deepList}")
 
 # --- deleting
-colors.pop(3)   # remove fourth
-colors.pop()    # remove last
+colors.pop(3)  # remove fourth
+colors.pop()  # remove last
 colors.pop(-1)  # remove last
 
 if "black" in colors:
     colors.remove("black")
 
-colors.extend(["darkblack", "darksuperblack", "megadark"])
+colors.extend(["whitegray", "darkcyan", "megadark"])
 
 darks = filter(lambda x: "dark" in x, colors)
 
 print("------ Dark colors ------")
 for x in darks:
-  print(x)
+    print(x)
 
-
-mixed = [23, "red", True, [1, 2, 3], lambda x: x * x, 343.5, { 1, 2, 3 }]
-
+mixed = [23, "red", True, [1, 2, 3], lambda x: x * x, 343.5, {1, 2, 3}]
