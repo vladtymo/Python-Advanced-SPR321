@@ -33,7 +33,8 @@ class Order:
         return self.__price
 
     def setPrice(self, value):
-        self.__price = value
+        if value >= 0:
+            self.__price = value
 
     @property
     def price(self):
@@ -92,7 +93,7 @@ class SuperOrder(Order):
         self.bonus = bonus
 
     def __str__(self):
-        return f"I am super order #{self.number}"
+        return f"I am super order #{self.number} with bonus {self.bonus}$"
 
 
 superOrder = SuperOrder("Vision Pro", 3499, 0, 333)

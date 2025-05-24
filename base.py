@@ -30,5 +30,9 @@ def checkPassword(password) -> bool:
     return len(password) >= 6 and "." in password
 
 
+for i in range(10, 20, 2):
+    print(i, end=" ")
+
+print("\n" + "-" * 20)
 print(checkPassword("Qwer"))
 print(checkPassword("Qwer.3434"))

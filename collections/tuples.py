@@ -5,8 +5,7 @@ coord = (1, 10)
 
 location = (12.564564, 10.45454, "Rivne", "Ukraine")
 
-print("Country: " + location[3])
-
+# print("Country: " + location[3])
 lon, lat, city, country = location
 
 print("City: " + city)
