@@ -52,3 +52,17 @@ print("\n----- using gen exp")
 
 for i in result:
     print(i, end=" ")
+print("\n-----")
+
+
+# get all even numbers from 0 to 100
+def evenNumbers():
+    for i in range(101):
+        if i % 2 == 0:
+            yield i
+        if i >= 33 and i % 9 == 0:
+            break
+
+
+for i in evenNumbers():
+    print(i, end=" ")
